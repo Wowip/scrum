@@ -9,7 +9,7 @@ Más pruebas
 ## nivel 3
 
 
-![Una imagen](images/imagen1.png)
+![Una imagen](images/3.png)
 
 
 #### nivel 4
