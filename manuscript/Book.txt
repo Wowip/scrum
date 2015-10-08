@@ -1,2 +1,1 @@
-chapter3.txt
-Vagrant y máquinas virtuales.txt
+Vagrant y maquinas virtuales.txt
