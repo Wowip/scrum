@@ -9,7 +9,7 @@ Más pruebas
 ## nivel 3
 
 
-![Una imagen](images/3.png)
+![Una imagen](images/putty3.png.png)
 
 
 #### nivel 4
