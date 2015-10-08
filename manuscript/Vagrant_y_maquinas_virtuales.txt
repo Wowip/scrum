@@ -29,8 +29,8 @@ http://codehero.co/como-instalar-y-configurar-vagrant/
 Para realizar la instalación descarga el paquete en la versión 5.0.4 y sigue los pasos normalmente en la siguiente liga:
     https://www.virtualbox.org/wiki/Downloads
 
-![Instalación de VirtualBox](images/Instalacion de VirtualBox.png)
-[Imagen 4: Instalación de VirtualBox.]
+![Imagen 4: Instalación de VirtualBox.](images/Instalacion de VirtualBox.png)
+
 
 ## Instalación de VirtualBox en Linux
 
@@ -40,12 +40,12 @@ VirtualBox 5.0.4 for Linux hosts
 Ó realizar la instalación desde consola con el siguiente comando:
     $sudo apt-get install virtualbox
 
-![Comando de instalación](images/Comando de instalacion.png)
-[Imagen 2: Comando de instalación]
+![Imagen 2: Comando de instalación.](images/Comando de instalacion.png)
 
 
-![Correcta instalación de Virtualbox](images/Correcta instalacion de Virtualbox.png)
-[Imagen 3: Correcta instalación de Virtualbox]
+
+![Imagen 3: Correcta instalación de Virtualbox.](images/Correcta instalacion de Virtualbox.png)
+
 
 ## Instalación de VirtualBox en Mac OS
 
@@ -53,50 +53,50 @@ Después de haber realizado la instalación de Vagrant y VirtualBox desde la con
 
 - Crear una carpeta que se utilizará para desarrollar los ejercicios del curso en la ruta donde regularmente se trabaja.
 
-![mkdir scrum_developer](images/mkdir scrum_developer.png)
+![ ](images/mkdir scrum_developer.png)
 
 - Instructor te proporcionará un archivo con el nombre “python.box” colocar fuera de la carpeta que se creó.
 
-![cd scrum_developer](images/cd scrum_developer.png)
+![ ](images/cd scrum_developer.png)
 
 - Ejecuta el siguiente comando para que Vagrant reconozca que existe una máquina virtual
 
-![vagrant box add](images/vagrant box add.png)
+![ ](images/vagrant box add.png)
 
 - Ejecutar la máquina virtual con el siguiente comando
 
-![vagrant init](images/vagrant init.png)
+![ ](images/vagrant init.png)
 
 - Levantar la máquina virtual (Si tu sistema operativo es Windows, pasar al sub tema “Configuración de Putty”)
 
-![ vagrant up](images/vagrant up.png)
+![ ](images/vagrant up.png)
 
 - Realizar la conexión a la máquina virtual. SI tu sistema operativo es Windows es momento de configurar Putty ya que este SO no puede ejecutar el comando ssh.
 
-![vagrant ssh](images/vagrant ssh.png)
+![ ](images/vagrant ssh.png)
 
 ## Configuración de Putty. 
 
 Configurar Putty de la siguiente manera:
 1. Al teclear el comando “$vagrant up” te mostrará la siguiente pantalla:
 
-![](images/putty1.png)
+![ ](images/putty1.png)
 
 2. Ejecuta el programa Putty y configurarlo con los datos del paso anterior
 
-![](images/putty2.png)
+![ ](images/putty2.png)
 
 3. Con los datos ingresados en Putty, te pedirá usuario: vagrant y contraseña: vagrant
 
-![](images/putty3.png)
+![ ](images/putty3.png)
 
 4. Si la configuración fue exitosa te aparecerá lo siguiente en la consola.
 
-![](images/putty4.png)
+![ ](images/putty4.png)
 
 Entrar a la raíz de la máquina virtual (los que se guarde en este directorio, se guardará tanto en local como en la máquina virtual).
 
-![cd vagrant marquina virtual](images/cd vagrant marquina virtual.png.png)
+![ ](images/ cd vagrant marquina virtual.png)
 
 En la siguiente tabla se mencionan los comandos que se utilizan en este tema (no van en el orden que se ejecutan)
 
