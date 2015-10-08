@@ -1,3 +1,2 @@
-chapter1.txt
-chapter2.txt
+vagrant y máquinas virtuales.txt
 chapter3.txt
