@@ -11,6 +11,8 @@ Vagrant es necesario descargar la 1.7
 
 NOTA: Descargar Putty si el sistema operativo es Windows. Putty no se configura en  la instalación, se ejecuta hasta que utilizamos el comando “vagrant up” ( que será un poco más adelante) y se realiza la configuración. 
 
+![Instalación de VirtualBox](images/ Instalacion de VirtualBox.png.png)
+
 ## Instalación de Vagrant en Linux
 
 Para la instalación de vagrant desde consola teclear el siguiente comando:
