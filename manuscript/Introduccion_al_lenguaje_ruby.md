@@ -15,7 +15,14 @@ $ sudo apt-get install ruby
 
 $ brew install ruby
 
-Windows
+### Windows
+
 Se puede descargar el programa y seguir los pasos de instalación a través del siguiente enlace.
 
 http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p451.exe?direct
+
+## Guía
+
+Se puede encontrar una guía completa en español accediendo al sigueinte enlace:
+
+http://rubysur.org/aprende.a.programar/index.html
