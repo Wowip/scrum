@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-﻿hola, ésto está en un branch def
-
-=======
-﻿hola
->>>>>>> def
