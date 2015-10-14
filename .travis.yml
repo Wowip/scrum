@@ -10,6 +10,9 @@ python:
   - "pypy"
 # command to install dependencies
 install:
+  - sudo apt-get update 
+  - sudo apt-get virtualbox
+  - sudo apt-get install python
   - pip install --upgrade pip
   - pip install 
 
