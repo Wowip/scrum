@@ -14,6 +14,4 @@ install:
   - sudo apt-get update -qq
   - sudo apt-get install python
 # command to run tests
-  - python hola.py build_ext -i
-  - python -m compileall -f .
-  - python hola.py test
+  - python hola.py
