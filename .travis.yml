@@ -15,4 +15,4 @@ install:
   - sudo apt-get install python
 
 # command to run tests
-script: doctest
+script: hola.py
