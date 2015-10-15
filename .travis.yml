@@ -13,8 +13,6 @@ install:
   - sudo apt-get update 
   - sudo apt-get install virtualbox
   - sudo apt-get install python
-  - pip install --upgrade pip
-  - pip install 
 
 # command to run tests
-script: nosetests
+script: doctest
