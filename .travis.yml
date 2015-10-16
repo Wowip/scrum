@@ -16,6 +16,8 @@ install:
   - sudo apt-get install python-pip python-dev build-essential
   - sudo pip install --upgrade pip
   - sudo pip install --upgrade virtualenv
-  - pip install Pweave
+  - sudo pip install -U pip
+  - sudo python ez_setup.py
+  - sudo pip install --upgrade Pweave
 # command to run tests
 script: python ejemplo.py
