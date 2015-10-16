@@ -20,4 +20,4 @@ install:
   - sudo python ez_setup.py
   - sudo pip install --upgrade Pweave
 # command to run tests
-script: python ejemplo.py
+script: Pweave -f pandoc ejemplo2.Pnw
