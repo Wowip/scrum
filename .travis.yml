@@ -19,5 +19,6 @@ install:
   - sudo pip install -U pip
   - sudo python ez_setup.py
   - sudo pip install --upgrade Pweave
+  - sudo apt-get install python-matplotlib
 # command to run tests
 script: Pweave -f pandoc ejemplo2.Pnw
