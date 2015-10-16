@@ -1,5 +1,6 @@
-<< label="code_chunk" >>= 
+<< >>= 
 x = range(1,10)
 y = [i * 2 for i in x]
 print y
 @
+ 
