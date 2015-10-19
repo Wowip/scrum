@@ -9,6 +9,11 @@ python:
   - "3.5-dev" # 3.5 development branch
   - "nightly" # currently points to 3.6-dev
   - "pypy"
+#scripts para registro
+before_script:
+  - git config --global user.email "arturoinosencio@gmail.com"
+  - git config --global user.name "Wowip"
+
 # command to install dependencies
 install: 
   - sudo apt-get update -qq
@@ -25,7 +30,6 @@ script: Pweave -f pandoc ejemplo2.Pnw
 
 #Después de que lo convierta
 after_script: 
-  - git add .
-  - git pull
-  - git commit -m "Aplicando cambios"
-  - git push origin master
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - node ./node_modules/grunt-cli/bin/grunt release
