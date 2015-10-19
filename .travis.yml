@@ -20,7 +20,9 @@ install:
   - sudo pip install --upgrade Pweave
   - sudo apt-get install python-matplotlib
 # command to run tests
-script: Pweave -f pandoc ejemplo2.Pnw
+script: 
+  - Pweave -f pandoc ejemplo2.Pnw
+  - Pweave -f pandoc ejemplo3.Pnw
 
 #Después de que lo convierta
 after_script: 
