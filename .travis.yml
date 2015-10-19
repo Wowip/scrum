@@ -25,6 +25,7 @@ script: Pweave -f pandoc ejemplo2.Pnw
 #Después de que lo convierta
 after_script: 
   - git init
+  - ls
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
   - git add .
