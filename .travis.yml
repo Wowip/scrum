@@ -28,9 +28,8 @@ script:
 after_script: 
   - git init
   - ls
-  - git config --global user.email "arturoinosencio@gmail.com"
-  - git config --global user.name "Wowip"
   - git add .
+  - git pull
   - git commit -m "Añadiendo ejemplo2.md
   - git push origin master
 
