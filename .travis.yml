@@ -8,11 +8,6 @@ python:
   - "3.5"
   - "3.5-dev" # 3.5 development branch
 
-#scripts para registro
-before_script:
-  - git config --global user.email "arturoinosencio@gmail.com"
-  - git config --global user.name "Wowip"
-
 # command to install dependencies
 install: 
   - sudo apt-get update -qq
@@ -29,6 +24,8 @@ script: Pweave -f pandoc ejemplo2.Pnw
 
 #Después de que lo convierta
 after_script: 
+  - git config --global user.email "arturoinosencio@gmail.com"
+  - git config --global user.name "Wowip"
   - git add .
   - git commit -m "Añadiendo ejemplo2.md
   - git push origin master
