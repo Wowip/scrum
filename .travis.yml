@@ -26,12 +26,15 @@ script:
 
 #Después de que lo convierta
 after_script: 
+  - git config --global user.email "arturoinosencio@gmail.com"
+  - git config --global user.name "Wowip"
   - git init
   - ls
   - git add .
   - git pull
   - git commit -m "Añadiendo ejemplo2.md"
   - git push origin master
+
 
 env:
   global:
