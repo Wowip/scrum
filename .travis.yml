@@ -33,7 +33,10 @@ after_script:
   - git add .
   - git pull
   - git commit -m "Añadiendo ejemplo2.md"
+  - git config credential.helper store
   - git push origin master
+
+
 
 
 env:
