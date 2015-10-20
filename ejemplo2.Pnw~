@@ -1,0 +1,9 @@
+# Éste texto es antes del código.
+
+<< >>= 
+x = range(1,10)
+y = [i * 2 for i in x]
+print y
+@
+
+## y después éste texto.
