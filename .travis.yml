@@ -11,7 +11,7 @@ python:
   
 environment:
   access_token:
-    secure: 4d31105ed60db6c965982c7f4d0484627be7807f
+  secure: 4d31105ed60db6c965982c7f4d0484627be7807f
 
 
 # command to install dependencies
@@ -31,19 +31,12 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
 
 #Después de que lo convierta
-after_script: 
-  - git config --global user.email "arturoinosencio@gmail.com"
-  - git config --global user.name "Wowip"
-  - git config --global credential.helper store
-  - ps: Add-Content "$env:Wowip\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - git init
-  - ls
-  - git add .
-  - git pull
-  - git commit -m "Añadiendo ejemplo2.md"
-  - git push origin master
-  
-
+after_success:
+  - eval "$(ssh-agent -s)" #start the ssh agent
+  - chmod 600 .travis/deploy_key.pem # this key should have push access
+  - ssh-add .travis/deploy_key.pem
+  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+  - git push deploy
 
 env:
   global:
