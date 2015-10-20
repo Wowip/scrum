@@ -7,6 +7,12 @@ python:
   - "3.4"
   - "3.5"
   - "3.5-dev" # 3.5 development branch
+  
+  
+environment:
+  access_token:
+    secure: 4d31105ed60db6c965982c7f4d0484627be7807f
+
 
 # command to install dependencies
 install: 
@@ -28,15 +34,15 @@ script:
 after_script: 
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
+  - git config --global credential.helper store
+  - ps: Add-Content "$env:Wowip\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git init
   - ls
   - git add .
   - git pull
   - git commit -m "Añadiendo ejemplo2.md"
-  - git config credential.helper store
   - git push origin master
-
-
+  
 
 
 env:
