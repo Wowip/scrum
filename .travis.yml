@@ -7,8 +7,7 @@ python:
   - "3.4"
   - "3.5"
   - "3.5-dev" # 3.5 development branch
-  - "nightly" # currently points to 3.6-dev
-  - "pypy"
+
 # command to install dependencies
 install: 
   - sudo apt-get update -qq
@@ -21,4 +20,25 @@ install:
   - sudo pip install --upgrade Pweave
   - sudo apt-get install python-matplotlib
 # command to run tests
-script: Pweave -f pandoc ejemplo2.Pnw
+script: 
+  - Pweave -f pandoc ejemplo2.Pnw
+  - Pweave -f pandoc ejemplo3.Pnw
+
+#Después de que lo convierta
+after_script: 
+  - git config --global user.email "arturoinosencio@gmail.com"
+  - git config --global user.name "Wowip"
+  - git init
+  - ls
+  - git add .
+  - git pull
+  - git commit -m "Añadiendo ejemplo2.md"
+  - git config credential.helper store
+  - git push origin master
+
+
+
+
+env:
+  global:
+    secure: {"lots-of-seemingly-random-characters"}
