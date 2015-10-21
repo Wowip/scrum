@@ -38,6 +38,6 @@ after_success:
   - git add -f .
   - git pull
   - git commit -m "Añadiendo archivos faltantes.md"
-  - git push -fq origin master
+  - git remote push -fq origin master
 
 
