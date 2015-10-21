@@ -31,12 +31,12 @@ script:
 
 #Después de que lo convierta
 after_success:
-  - git clone https://github.com/Wowip/scrum_developer.git
   - git remote
+  - git remote add nuevo https://github.com/Wowip/scrum_developer
   - ls
   - git add .
   - git pull
   - git commit -m "Añadiendo archivos faltantes.md"
-  - git push -fq origin master
+  - git fetch pb
 
 
