@@ -31,7 +31,7 @@ before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
   - git config credential.helper "store --file=~/.git/credentials"
-  - echo "https://${608a9278e643e592de3c2558270ffd8c885b570d}:@github.com" > ~/.git/credentials
+  - echo "https://608a9278e643e592de3c2558270ffd8c885b570d:@github.com" > ~/.git/credentials
 # command to run tests
 script: 
   - Pweave -f pandoc ejemplo2.Pnw
@@ -42,9 +42,10 @@ after_success:
   - git remote rm origin
   - git init
   - ls
-  - git remote add origin https://username:${608a9278e643e592de3c2558270ffd8c885b570d}@github.com/username/repo.git
+  - git remote add origin https://username:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
   - git pull
   - git commit -m "Añadiendo ejemplo2.md"
+  - git push origin https://username:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
 
 
 env:
