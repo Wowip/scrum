@@ -37,6 +37,6 @@ after_success:
   - git add .
   - git pull
   - git commit -m "Añadiendo archivos faltantes.md"
-  - git fetch pb
+  - git fetch nuevo
 
 
