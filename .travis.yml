@@ -41,5 +41,5 @@ after_success:
   - git add .
   - git pull
   - git commit -m "Añadiendo archivos faltantes.md"
-  - git push origin master 
+  - git push origin master https://Wowip:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
 
