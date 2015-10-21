@@ -27,11 +27,8 @@ install:
   - sudo apt-get install python-matplotlib
   
 before_script:
-  - echo -e "Host github"
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
-  - git config credential.helper "store --file=~/.git/credentials"
-  - echo "https://608a9278e643e592de3c2558270ffd8c885b570d:@github.com" > ~/.git-credentials
 # command to run tests
 script: 
   - Pweave -f pandoc ejemplo2.Pnw
@@ -40,15 +37,9 @@ script:
 #Después de que lo convierta
 after_success:
   - git init
-  - git clone https://608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
-  - git config remote.origin.url https://Wowip:arturito20@github.com/Wowip/scrum_developer.git
   - ls
   - git add .
   - git pull
   - git commit -m "Añadiendo archivos faltantes.md"
-  - git push origin master
+  - git push origin master 
 
-
-env:
-  global:
-    secure: {"lots-of-seemingly-random-characters"}
