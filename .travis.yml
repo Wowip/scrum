@@ -39,12 +39,12 @@ script:
 
 #Después de que lo convierta
 after_success:
-  - git remote rm origin
   - git init
-  - ls
-  - git remote add origin https://username:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
+  - git clone https://608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
+  - la
+  - git add .
   - git pull
-  - git commit -m "Añadiendo ejemplo2.md"
+  - git commit -m "Añadiendo archivos faltantes.md"
   - git push origin https://username:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
 
 
