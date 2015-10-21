@@ -23,6 +23,7 @@ install:
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
+  - ssh-keygen -t rsa
   
 # command to run tests
 script: 
