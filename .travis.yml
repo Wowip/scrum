@@ -37,6 +37,7 @@ after_success:
   - ssh-add .travis/deploy_key.pem
   - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
   - git push deploy
+  - travis encrypt GH_TOKEN=608a9278e643e592de3c2558270ffd8c885b570d
 
 env:
   global:
