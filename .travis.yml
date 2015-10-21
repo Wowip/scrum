@@ -21,6 +21,8 @@ install:
   - sudo apt-get install python-matplotlib
   
 before_script:
+  - git config --global user.email "arturoinosencio@gmail.com"
+  - git config --global user.name "Wowip"
   
 # command to run tests
 script: 
@@ -29,9 +31,7 @@ script:
 
 #Después de que lo convierta
 after_success:
-  - git config --global user.email "arturoinosencio@gmail.com"
-  - git config --global user.name "Wowip"
-  - git remote add origin https://Wowip:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
+  - git clone https://github.com/Wowip/scrum_developer.git
   - ls
   - git add .
   - git pull
