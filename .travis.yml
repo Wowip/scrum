@@ -27,7 +27,7 @@ install:
   - sudo apt-get install python-matplotlib
   
 before_script:
-  - echo -e "Host github
+  - echo -e "Host github"
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
   - git config credential.helper "store --file=~/.git/credentials"
