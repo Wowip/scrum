@@ -41,11 +41,12 @@ script:
 after_success:
   - git init
   - git clone https://608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
-  - la
+  - git config remote.origin.url https://Wowip:arturito20@github.com/Wowip/scrum_developer.git
+  - ls
   - git add .
   - git pull
   - git commit -m "Añadiendo archivos faltantes.md"
-  - git push origin https://username:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
+  - git push origin master
 
 
 env:
