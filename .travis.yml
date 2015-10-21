@@ -33,6 +33,7 @@ script:
 #Después de que lo convierta
 after_success:
   - git clone https://github.com/Wowip/scrum_developer.git
+  - git remote
   - ls
   - git add .
   - git pull
