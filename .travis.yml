@@ -31,7 +31,7 @@ before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
   - git config credential.helper "store --file=~/.git/credentials"
-  - echo "https://608a9278e643e592de3c2558270ffd8c885b570d:@github.com" > ~/.git/credentials
+  - echo "https://608a9278e643e592de3c2558270ffd8c885b570d:@github.com" > ~/.git-credentials
 # command to run tests
 script: 
   - Pweave -f pandoc ejemplo2.Pnw
