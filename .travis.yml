@@ -36,7 +36,7 @@ after_success:
   - git remote add origin https://Wowip:608a9278e643e592de3c2558270ffd8c885b570d@github.com/Wowip/scrum_developer.git
   - ls
   - git add -f .
-  - git pull
+  - git pull remote master
   - git commit -m "Añadiendo archivos faltantes.md"
   - git remote push -fq origin master
 
