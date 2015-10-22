@@ -28,7 +28,7 @@ before_script:
 script: 
   - Pweave -f pandoc ejemplo2.Pnw
   - Pweave -f pandoc ejemplo3.Pnw
-  - sudo ./build.sh
+  - sh ./build.sh
 
 
 
