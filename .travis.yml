@@ -28,7 +28,7 @@ before_script:
 script: 
   - Pweave -f pandoc ejemplo2.Pnw
   - Pweave -f pandoc ejemplo3.Pnw
-  - ./build.sh
+  - build.sh
 #Colocando que solo se corra por def
 branches:
   only:
@@ -39,14 +39,6 @@ env:
   global:
     secure: a04bbc16b409cf2a7a5f98be5b4fe6d5a42a0a46
 
-#Después de que lo convierta
-after_success:
-  - git config remote.origin.url https://Wowip:a04bbc16b409cf2a7a5f98be5b4fe6d5a42a0a46@github.com/Wowip/scrum_developer.git
-  - ls -a
-  - git add .
-  - git pull
-  - git commit -m "Añadiendo archivos faltantes.md"
-  - git config --global credential.helper
-  - git push -fq origin master
+
 
 
