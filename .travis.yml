@@ -29,15 +29,7 @@ script:
   - Pweave -f pandoc ejemplo2.Pnw
   - Pweave -f pandoc ejemplo3.Pnw
   - build.sh
-#Colocando que solo se corra por def
-branches:
-  only:
-  - def
 
-#Poniendo el token de manera segura  
-env:
-  global:
-  secure: a04bbc16b409cf2a7a5f98be5b4fe6d5a42a0a46
 
 
 
