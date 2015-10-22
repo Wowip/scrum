@@ -31,9 +31,7 @@ script:
 
 #Después de que lo convierta
 after_success:
-  - curl -H 'Authorization: token a04bbc16b409cf2a7a5f98be5b4fe6d5a42a0a46' https://github.com/Wowip/scrum_developer.git
-  - git remote rm origin
-  - git remote add origin https://Wowip:a04bbc16b409cf2a7a5f98be5b4fe6d5a42a0a46@github.com/Wowip/scrum_develope.git
+  - git config remote.origin.url https://Wowip:a04bbc16b409cf2a7a5f98be5b4fe6d5a42a0a46@github.com/Wowip/scrum_developer.git
   - ls -a
   - git add .
   - git pull
