@@ -28,6 +28,13 @@ before_script:
 script: 
   - Pweave -f pandoc ejemplo2.Pnw
   - Pweave -f pandoc ejemplo3.Pnw
+  
+after_script:
+  - git remote add origin git@github.com:Wowip/scrum_developer.git
+  - git add .
+  - git pull
+  - git commit -m "añadiendo pruebas"
+  - git push origin master
 
 
 
