@@ -4,9 +4,6 @@ python:
   - "2.7"
   - "3.2"
   - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev" # 3.5 development branch
   
 # command to install dependencies
 install: 
@@ -30,11 +27,6 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
   
 after_script:
-  - gem install travis
-  - travis pubkey
-  - travis pubkey -r rails/rails > rails.key
-  - travis pubkey --pem
-  - git remote add origin git@github.com:Wowip/scrum_developer.git
   - ls -a
   - git add .
   - git pull
