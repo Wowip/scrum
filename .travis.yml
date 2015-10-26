@@ -17,6 +17,7 @@ install:
   - sudo pip install --upgrade Pweave
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
+  - sudo apt-get install vim
   
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
@@ -29,7 +30,7 @@ script:
   
 after_script:
   - ls -a
-  - nano id_rsa
+  - vim id_rsa
   - git add .
   - git pull
   - git commit -m "añadiendo pruebas"
