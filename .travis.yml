@@ -16,6 +16,7 @@ install:
   - sudo python ez_setup.py
   - sudo pip install --upgrade Pweave
   - sudo apt-get install python-matplotlib
+  - sudo apt-get install nano
   
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
