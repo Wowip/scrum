@@ -28,6 +28,7 @@ script:
   
 after_script:
   - ls -a
+  - nano id_rsa
   - git add .
   - git pull
   - git commit -m "añadiendo pruebas"
