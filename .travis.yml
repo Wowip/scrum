@@ -31,7 +31,6 @@ script:
 after_script:
   - git clone git@github.com:Wowip/scrum_developer.git
   - ls -a
-  - vim id_rsa
   - git add .
   - git pull
   - git commit -m "añadiendo pruebas"
