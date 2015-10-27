@@ -29,6 +29,7 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
   
 after_script:
+  - ls -a
   - ls -al /.ssh
   - eval "$(ssh-agent -s)"
   - ssh -add /.ssh/id_rsa
