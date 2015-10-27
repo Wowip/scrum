@@ -27,14 +27,12 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
   
 after_script:
-  - sudo chmod 600 .ssh/id_rsa
-  - sudo chmod 600 .ssh/id_rsa.pub
+  - git remote add git@github.com:Wowip/scrum_developer.git
+  - sudo chmod 600 .ssh/known_hosts
   - ls -a
   - ls -al .ssh
-  - eval "$(ssh-agent -s)"
   - ssh-add .ssh/id_rsa
   - ssh -T git@github.com
-  - ls -a
   - git add .
   - git pull
   - git commit -m "añadiendo pruebas"
