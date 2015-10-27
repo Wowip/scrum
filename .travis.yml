@@ -30,8 +30,7 @@ script:
   
 after_script:
   - eval "$(ssh-agent -s)"
-  - ssh-add -l
-  - sudo ssh -vT git@github.com
+  - ssh-add id_rsa
   - ls -a
   - git add .
   - git pull
