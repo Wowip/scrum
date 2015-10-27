@@ -29,8 +29,10 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
   
 after_script:
-  - ssh -T git@github.com
-  - ssh -vT git@github.com
+  - eval "$(ssh-agent -s)"
+  - ssh-add -l
+  - sudo ssh -T git@github.com
+  - sudo ssh -vT git@github.com
   - ls -a
   - git add .
   - git pull
