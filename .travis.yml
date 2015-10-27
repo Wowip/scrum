@@ -29,7 +29,6 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
   
 after_script:
-  - sudo git clone git@github.com:Wowip/scrum_developer.git
   - ls -a
   - git add .
   - git pull
