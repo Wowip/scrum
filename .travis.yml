@@ -40,7 +40,6 @@ after_script:
   - ssh -T git@github.com
   - git add .
   - git commit -m "añadiendo pruebas"
-  - git pull origin master
   - git push origin master
 
 
