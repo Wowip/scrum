@@ -23,8 +23,7 @@ before_script:
   
 # command to run tests
 script: 
-  - Pweave -f pandoc ejemplo2.Pnw
-  - Pweave -f pandoc ejemplo3.Pnw
+  - Pweave -f pandoc manuscript/IntroduccionPython.Pnw
   
 after_script:
   - git init
