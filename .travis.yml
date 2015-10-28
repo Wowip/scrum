@@ -23,8 +23,9 @@ before_script:
   
 # command to run tests
 script: 
-  - Pweave -f pandoc manuscript/ *.Pnw
-  - Pweave -f pandoc manuscript/2.Continuosintegration.Pnw
+  - cd manuscript
+  - Pweave -f pandoc *.Pnw
+  - cd ..
   
 after_script:
   - ls
