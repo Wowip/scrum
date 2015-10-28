@@ -1,12 +1,7 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev" # 3.5 development branch
+
   
 # command to install dependencies
 install: 
@@ -19,6 +14,8 @@ install:
   - sudo python ez_setup.py
   - sudo pip install --upgrade Pweave
   - sudo apt-get install python-matplotlib
+  - sudo apt-get install nano
+  - sudo apt-get install vim
   
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
@@ -30,7 +27,14 @@ script:
   - Pweave -f pandoc ejemplo3.Pnw
   
 after_script:
-  - git remote add origin git@github.com:Wowip/scrum_developer.git
+  - git init
+  - sudo chmod 600 .ssh/id_rsa
+  - sudo chmod 600 .ssh/id_rsa.pub
+  - ls -a
+  - ls -al .ssh
+  - eval "$(ssh-agent -s)"
+  - ssh-add .ssh/id_rsa
+  - ssh -T git@github.com
   - git add .
   - git pull
   - git commit -m "añadiendo pruebas"
