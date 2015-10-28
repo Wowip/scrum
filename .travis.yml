@@ -35,9 +35,17 @@ script:
   - Pweave -f manuscript/pandoc manuscript/18.Pre-commitHooks.Pnw
   - Pweave -f manuscript/pandoc manuscript/19.EjercicioGeneracionDeTickets.Pnw
   - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
-  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
-  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
-  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
+  - Pweave -f manuscript/pandoc manuscript/20.TareaInvestigacionDeHerramientas.Pnw
+  - Pweave -f manuscript/pandoc manuscript/21.RetrospectivaDia3.Pnw
+  - Pweave -f manuscript/pandoc manuscript/22.PruebasdeInterfazdeUsuario.Pnw
+  - Pweave -f manuscript/pandoc manuscript/23.SeguridadSQLInjectionOWASP.Pnw
+  - Pweave -f manuscript/pandoc manuscript/3.Vagrantymaquinasvirtuales.Pnw
+  - Pweave -f manuscript/pandoc manuscript/4.IntroduccionPython.Pnw
+  - Pweave -f manuscript/pandoc manuscript/5.ComentariosUtiles.Pnw
+  - Pweave -f manuscript/pandoc manuscript/6.Doctest.Pnw
+  - Pweave -f manuscript/pandoc manuscript/7.Retrospectiva.Pnw
+  - Pweave -f manuscript/pandoc manuscript/8.RepositorioDeCodigoGit.Pnw
+  - Pweave -f manuscript/pandoc manuscript/9.IntroduccionAGogs.Pnw
   
   
 after_script:
