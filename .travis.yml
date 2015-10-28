@@ -23,7 +23,12 @@ before_script:
   
 # command to run tests
 script: 
-  - Pweave -f manuscript/pandoc *.Pnw
+  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
+  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
+  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
+  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
+  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
+  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
   
 after_script:
   - ls
