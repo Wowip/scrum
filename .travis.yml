@@ -24,11 +24,21 @@ before_script:
 # command to run tests
 script: 
   - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
-  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
-  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
-  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
-  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
-  - Pweave -f manuscript/pandoc manuscript/1.ScrumBut.Pnw
+  - Pweave -f manuscript/pandoc manuscript/10.EstandardeCodigo.Pnw
+  - Pweave -f manuscript/pandoc manuscript/11.PrettyPrintersAutopep8.Pnw
+  - Pweave -f manuscript/pandoc manuscript/12.IntroduccionAJenkins.Pnw
+  - Pweave -f manuscript/pandoc manuscript/13.ComplejidadCiclomatica.Pnw
+  - Pweave -f manuscript/pandoc manuscript/14.Refactoring.Pnw
+  - Pweave -f manuscript/pandoc manuscript/15.UnitTest.Pnw
+  - Pweave -f manuscript/pandoc manuscript/16.CodeCoverage.Pnw
+  - Pweave -f manuscript/pandoc manuscript/17.Gitignore.Pnw
+  - Pweave -f manuscript/pandoc manuscript/18.Pre-commitHooks.Pnw
+  - Pweave -f manuscript/pandoc manuscript/19.EjercicioGeneracionDeTickets.Pnw
+  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
+  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
+  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
+  - Pweave -f manuscript/pandoc manuscript/2.Continuosintegration.Pnw
+  
   
 after_script:
   - ls
