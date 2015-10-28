@@ -20,14 +20,14 @@ install:
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
   - git config --global user.name "Wowip"
+  - cd manuscript
   
 # command to run tests
 script: 
-  - cd manuscript
   - Pweave -f pandoc *.Pnw
-  - cd ..
   
 after_script:
+  - cd ..
   - ls
   - cd manuscript
   - ls
