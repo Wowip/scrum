@@ -31,7 +31,7 @@ after_script:
   - sudo chmod 600 .ssh/id_rsa.pub
   - ls -a
   - ls -al .ssh
-  - ssh-add .ssh/id_rsa
+  - ssh -add .ssh/id_rsa
   - ssh -T git@github.com
   - git add .
   - git pull
