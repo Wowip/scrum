@@ -23,7 +23,7 @@ before_script:
   
 # command to run tests
 script: 
-  - Pweave -f pandoc *.Pnw
+  - Pweave -f pandoc manuscript/*.Pnw
   
 after_script:
   - ls
