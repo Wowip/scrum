@@ -1,8 +1,0 @@
-README.md
-
-
-
-Book.txt
-images
-IntroduccionPython.md
-IntroduccionPython.Pnw
