@@ -26,6 +26,7 @@ script:
   - Pweave -f pandoc manuscript/IntroduccionPython.Pnw
   
 after_script:
+  - ls -l | awk '{print $9}'
   - git init
   - git remote -v 
   - git remote remove origin
