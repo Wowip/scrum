@@ -39,8 +39,8 @@ after_script:
   - ssh-add .ssh/id_rsa
   - ssh -T git@github.com
   - git add .
-  - git commit -m "añadiendo pruebas"
   - git pull origin master
+  - git commit -m "añadiendo pruebas"
   - git push origin master
 
 
