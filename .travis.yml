@@ -23,10 +23,15 @@ before_script:
   
 # command to run tests
 script: 
-  - Pweave -f pandoc ejemplo2.Pnw
-  - Pweave -f pandoc ejemplo3.Pnw
+  - Pweave -f pandoc manuscript/IntroduccionPython.Pnw
   
 after_script:
+  - ls
+  - cd manuscript
+  - ls
+  - ls -l *.md | awk '{print $9}' > Book.txt
+  - cd ..
+  - ls
   - git init
   - git remote -v 
   - git remote remove origin
@@ -38,9 +43,9 @@ after_script:
   - eval "$(ssh-agent -s)"
   - ssh-add .ssh/id_rsa
   - ssh -T git@github.com
+  - git checkout master
   - git add .
   - git commit -m "añadiendo pruebas"
-  - git pull
   - git push origin master
 
 

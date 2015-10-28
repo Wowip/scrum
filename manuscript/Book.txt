@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1.ScrumBut.Pnw
 2.Continuosintegration.Pnw
 3.Vagrantymaquinasvirtuales.Pnw
@@ -35,3 +36,6 @@
 
 
 
+=======
+IntroduccionPython.md
+>>>>>>> a0ec8c91db4c1473f08061b659710e8cf908b167
