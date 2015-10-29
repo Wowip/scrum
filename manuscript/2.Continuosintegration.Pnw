@@ -16,6 +16,24 @@ A continuación se mencionan algunas de las ventajas y desventajas de realizar C
 |Monitorización continua de las métricas de     |                                                       |
 |calidad del proyecto.                          |                                                       |
 
+<html>
+    <head>
+        <title>Ejemplo del uso de tablas</title>
+    </head>
+    <body>
+        <table border="2px">
+           <tr>
+              <td>Ventajas</td>
+              <td>Desventajas</td>
+          </tr>
+          <tr>
+              <td>Celda 4</td>
+              <td>Celda 5</td>
+          </tr>
+        </table>
+    </body>
+</html>
+
 Tabla 1: Ventajas y desventajas de continuous integration
 
 Ciclo de vida:
