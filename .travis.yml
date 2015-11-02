@@ -23,29 +23,7 @@ before_script:
   
 # command to run tests
 script: 
-  - Pweave -f pandoc manuscript/1.ScrumBut.Pnw
-  - Pweave -f pandoc manuscript/10.EstandardeCodigo.Pnw
-  - Pweave -f pandoc manuscript/11.PrettyPrintersAutopep8.Pnw
-  - Pweave -f pandoc manuscript/12.IntroduccionAJenkins.Pnw
-  - Pweave -f pandoc manuscript/13.ComplejidadCiclomatica.Pnw
-  - Pweave -f pandoc manuscript/14.Refactoring.Pnw
-  - Pweave -f pandoc manuscript/15.UnitTest.Pnw
-  - Pweave -f pandoc manuscript/16.CodeCoverage.Pnw
-  - Pweave -f pandoc manuscript/17.Gitignore.Pnw
-  - Pweave -f pandoc manuscript/18.Pre-commitHooks.Pnw
-  - Pweave -f pandoc manuscript/19.EjercicioGeneracionDeTickets.Pnw
-  - Pweave -f pandoc manuscript/2.Continuosintegration.Pnw
-  - Pweave -f pandoc manuscript/20.TareaInvestigacionDeHerramientas.Pnw
-  - Pweave -f pandoc manuscript/21.RetrospectivaDia3.Pnw
-  - Pweave -f pandoc manuscript/22.PruebasdeInterfazdeUsuario.Pnw
-  - Pweave -f pandoc manuscript/23.SeguridadSQLInjectionOWASP.Pnw
-  - Pweave -f pandoc manuscript/3.Vagrantymaquinasvirtuales.Pnw
-  - Pweave -f pandoc manuscript/4.IntroduccionPython.Pnw
-  - Pweave -f pandoc manuscript/5.ComentariosUtiles.Pnw
-  - Pweave -f pandoc manuscript/6.Doctest.Pnw
-  - Pweave -f pandoc manuscript/7.Retrospectiva.Pnw
-  - Pweave -f pandoc manuscript/8.RepositorioDeCodigoGit.Pnw
-  - Pweave -f pandoc manuscript/9.IntroduccionAGogs.Pnw
+  - cd manuscript && Pweave -f pandoc *.Pnw
   
   
 after_script:
