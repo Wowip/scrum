@@ -23,7 +23,7 @@ before_script:
   
 # command to run tests
 script: 
-  - sh script_prueba.sh
+  - sh scrip_prueba.sh
   
   
 after_script:
