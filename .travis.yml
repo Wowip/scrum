@@ -23,7 +23,7 @@ before_script:
   
 # command to run tests
 script: 
-  - cd manuscript && Pweave -f pandoc *.Pnw
+  - sh script_prueba.sh
   
   
 after_script:
