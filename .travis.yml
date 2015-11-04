@@ -16,6 +16,8 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
+  - sudo apt-get install doctest
+  - sudo apt-get install pip8
   
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
