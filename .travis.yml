@@ -16,7 +16,6 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - cabal install doctest
   
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
