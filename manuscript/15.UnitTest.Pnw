@@ -33,7 +33,8 @@ Después de haber redactado todas las pruebas para cada uno de las historias de 
 
 << label="code_chunk" >>=
     weeks = 2
-    return 60 * 24 * 7 * weeks
+    r = 60 * 24 * 7 * weeks
+    print(r)
 @
 
 
