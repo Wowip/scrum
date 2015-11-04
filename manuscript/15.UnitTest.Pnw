@@ -42,7 +42,8 @@ def minutes_in_weeks(weeks):
 """
 weeks = 2
 r = [60 * 24 * 7 * weeks]
-print(r)
+t = return(r)
+print(t)
 @
 
 
