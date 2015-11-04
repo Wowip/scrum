@@ -43,7 +43,6 @@ def minutes_in_weeks(weeks):
 << label="code_chunk" >>=
 weeks = 2
 r = [60 * 24 * 7 * weeks]
-t = return(r)
 print(r)
 @
 
