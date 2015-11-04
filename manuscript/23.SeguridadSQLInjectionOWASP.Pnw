@@ -4,4 +4,6 @@ Los datos y la información que se generan diariamente en internet es demasiada,
 
 __SQL Injection.__ Es uno de los métodos más utilizados que aprovecha la vulnerabilidad de las aplicaciones para realizar operaciones sobre las bases de datos, el cual debe ser tomando en cuenta por los desarrolladores de aplicaciones Web.
 
+![By Randall Munroe](images/exploits_of_a_mom.png)
+
 __OWASP (Open Web Application Security Project).__ Es un proyecto de código abierto que proporciona recursos como artículos, libros, capacitaciones, Software de testeo, etcétera, gratuitos para determinar y combatir las causas que hacen que el software sea inseguro, y con ello promover Software de calidad y seguro.
