@@ -1,6 +1,49 @@
 # 15 Unit Test
 
-El desarrollo de una aplicación es deficiente si no se cubren pruebas unitarias, existen malas creencias sobre el desarrollo de pruebas unitarias como: “pérdida de tiempo”, “resulta complicado probar el código”, “no son importantes”,  “no ayudan a mejorar el código”, y una clásica frase de los desarrolladores “mi trabajo es desarrollar, no probar código, ese no es mi trabajo!” todos estos son algunos ejemplos de los pretextos que pueden tomar los desarrolladores para no realizar pruebas unitarias y las cuales están completamente equivocadas.
+El desarrollo de una aplicación es deficiente si no se cubren pruebas unitarias, existen malas creencias sobre el desarrollo de pruebas unitarias como: “pérdida de tiempo”, “resulta complicado probar el código”, “no son importantes”,  “no ayudan a mejorar el código”, y una clásica frase de los desarrolladores “mi trabajo es desarrollar, no probar código, ese no es mi trabajo!”, todos estos son algunos ejemplos de los pretextos que pueden tomar los desarrolladores para no realizar pruebas unitarias y las cuales están completamente equivocadas.
 
-Una prueba unitaria es un método que prueba una unidad de código, lo cual agrega madurez y calidad al desarrollo de Software, desarrollar pruebas unitarias es una de las mejores prácticas que se deben aplicar desde el comienzo de la programación de cada individuo, para que sea adoptado como un buen hábito de desarrollo de Software. Mejoran la calidad de las aplicaciones ya que ayudan a disminuir los errores o bugs, y es menos costoso corregir un error en la fase de desarrollo, ya que tomaría más tiempo encontrar un error cuando el sistema esté en producción.
+Una prueba unitaria es un método que prueba una unidad de código, lo cual agrega madurez y calidad al desarrollo de Software, desarrollar pruebas unitarias es una de las mejores prácticas que se deben aplicar desde el comienzo de la programación de cada individuo, para que sea adoptado como un buen hábito de desarrollo de Software. 
+Las pruebas unitarias mejoran la calidad de las aplicaciones ya que ayudan a disminuir los errores o bugs, y es menos costoso corregir un error en la fase de desarrollo, ya que tomaría más tiempo encontrar un error cuando el sistema esté en producción.
 El desarrollo de la pruebas unitarias debería ser creado antes de comenzar la codificación de una manera sencilla y entendible para todos.
+
+Como ejemplo de la redaccion de una prueba unitaria en Python, es la sigueinete funcion, la cual nos devuelve los minutos de una semana y de dos semanas conjuntamente se agrega el resultado que se espera obtener al correr la funcion:
+
+Suponga que este es uno de los requerimientos de un sistema y que fue redactado en una historia de usuario.
+
+Para explicar un poco mejor como Python ejecuta las pruebas se explicara de la siguiente manera:
+
+* Def define la función y el nombre de la función
+* Lo que se encuentre entre comiillas triples es tomado como la prueba.
+* Lo que va después de >>> es el resultado que esperamos.
+* Y enseguida realizamos el código que ejecutara la función.
+
+def minutes_in_weeks(weeks):
+    """ 1: (Task 0.5.1) Minutes in a Week
+
+    >>> minutes_in_weeks(1)
+    10080
+
+    >>> minutes_in_weeks(2)
+    20160
+    """
+
+La redacción de esta prueba es facíl de entender para cualquier desarrollador o tester y puede ser entendida por el cliente.
+
+Después de haber redactado todas las pruebas para cada uno de las historias de usuario se procede a codificar la función de la siguiente manera (podría ser de una manera diferente según la imaginación del desarrollador).
+
+<< label="code_chunk" >>=
+def minutes_in_weeks(weeks):
+    """ 1: (Task 0.5.1) Minutes in a Week
+
+    >>> minutes_in_weeks(1)
+    10080
+
+    >>> minutes_in_weeks(2)
+    20160
+    """
+    return 60 * 24 * 7 * weeks
+@
+
+
+
+
