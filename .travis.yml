@@ -31,7 +31,7 @@ after_script:
   - cd manuscript
   - ls
   - ls -l *.md | sort -g | awk '{print $9}' > Book.txt
-  - ls *.md
+  - ls *.md | sort -g
   - cd ..
   - ls
   - git init
