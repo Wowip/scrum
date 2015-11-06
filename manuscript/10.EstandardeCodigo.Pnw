@@ -24,7 +24,7 @@ No se deben de realizar comentarios obvios.
 Puedes encontrar mas información sobre el estandar de código [aquí][15] 
 [15]:http://mundogeek.net/traducciones/guia-estilo-python.htm)
 
-## 10.1 Para Python encontramos PEP8 (Python Enhancement Proposals).
+## 10.1 Python Enhancement Proposals (PEP8).
 
 Está dedicada a la recopilación de los estándares seguidos por los desarrolladores de Python a la hora de escribir código para la librería estándar, éste ejecuta las reglas automáticamente y genera un resultado de las líneas que no cumplen con el estándar de codificación.
 
