@@ -31,7 +31,7 @@ En la siguiente imagen se muestra el funcionamieto de “python -m doctest pytho
 ![Ejemplo del funcionamiento de python doctest](images/doctest.png)
 
 
-__Nota:__ Para conocer al desarrollador de cada linea de codigo ejecutar el siguiente comando:
+__Nota:__ Para conocer al desarrollador de cada línea de codigo ejecutar el siguiente comando:
 
     `git blem nombre_del_archivo`
     `git blem python_lab.py`
