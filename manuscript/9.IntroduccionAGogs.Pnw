@@ -11,10 +11,10 @@ __Ejercicio:__ El siguiente ejercicio se realizará mediante el repositorio Gogs
 
 Pasos generales para el desarrollo del ejercicio (no son pasos específicos)
 
-* Entrar a la url que te dirá el instructor, ejemplo: http://10.13.4.78:3000/
+* Entrar a la url que dara el instructor, ejemplo: http://10.13.4.78:3000/
 * Registrarse
 * Reunirse en equipo, seleccionar un líder y nombre del equipo
-* Solo el líder,  creará un repositorio, haciendo clic en Fork, al actual (Creado por el instructor).
+* Solo el líder,  creará un repositorio, haciendo clic en Fork, al repositorio actual (Creado por el instructor).
 
 ![Hacer Fork](images/hacerfork.png)
 
@@ -22,7 +22,7 @@ Pasos generales para el desarrollo del ejercicio (no son pasos específicos)
 
 ![Asignar nombre](images/Asignarnombre.png)
 
-* Agregar a sus compañeros de equipo como colaboradores.
+* Agregar a los compañeros de equipo como colaboradores.
 
 ![Agregar colaboradores](images/AsignarColaboradores.png)
 
@@ -33,7 +33,7 @@ Pasos generales para el desarrollo del ejercicio (no son pasos específicos)
 
 * Desde la consola entrar a /vagrant y ejecutar el comando:
 
- git clone pegar aqui la url del repositorio que fue copiado previamente
+ git clone "pegar aqui la url del repositorio que fue copiado previamente"
 
 ![Hacer Clone](images/HacerClone.png)
 
@@ -45,8 +45,8 @@ Pasos generales para el desarrollo del ejercicio (no son pasos específicos)
 
 ![Commit](images/Commitrefs.png)
 
-* Para cerrar el “issue” se cambiará el comando por: “fixes #3” como se muestra en la siguiente imagen:
+* Para cerrar el “issue” se cambiará el comando "Refs" por: “fixes #3” como se muestra en la siguiente imagen:
 
 ![Commit](images/Commitfixes.png)
 
-__NOTA:__ Los comandos son los mismos que se encuentran en el tema “Repositorio de código Git”.
+__NOTA:__ Los comandos son los mismos que se encuentran en el tema “8. Repositorio de código Git”.
