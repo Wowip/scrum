@@ -29,3 +29,4 @@ Después de aplicar autopep8 este es el resultado:
 ![Después de Autopep8](images/DespuesAutopep8.png)
 
 
+__Ejercico:__ Aplicar autopep8 al archivo "python_lab.py". En caso de que aun muestre errores, corregir manualmente como en el ejercicio anterior, hasta que no marque ningun error.
