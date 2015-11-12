@@ -17,8 +17,7 @@ install:
   - sudo apt-get install nano
   - sudo apt-get install vim
   - sudo apt-get install r-base
-  - sudo apt-get install r-base-dev
-  - sudo update.packages(ask = FALSE, repos = 'http://cran.rstudio.org')
+  - sudo Rscript -e "install.packages('knitr', repos = c('http://www.omegahat.org', 'http://cran.rstudio.org'), type = 'source')"
 
   
 # command to run tests
