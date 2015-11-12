@@ -16,6 +16,7 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
+  - sudo apt-get install r-base
   
 before_script:
   - git config --global user.email "arturoinosencio@gmail.com"
