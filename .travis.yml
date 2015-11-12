@@ -17,6 +17,7 @@ install:
   - sudo apt-get install nano
   - sudo apt-get install vim
   - sudo apt-get install r-base
+  - sudochmod u+w /data/R/packages
   - sudo Rscript -e "install.packages('knitr', repos = c('http://www.omegahat.org', 'http://cran.rstudio.org'), type = 'source')"
   - sudo Rscript -e "install.packages('knitr', lib='/data/Rpackages/')"
   
