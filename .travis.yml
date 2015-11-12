@@ -18,7 +18,7 @@ install:
   - sudo apt-get install vim
   - sudo apt-get install r-base
   - sudo apt-get install r-base-dev
-  - sudo Rscript -e "install.packages('knitr', repos = c('http://yihui.name/xran', 'http://cran.rstudio.org'), type = 'source')"
+  - sudo update.packages(ask = FALSE, repos = 'http://cran.rstudio.org')
 
   
 # command to run tests
