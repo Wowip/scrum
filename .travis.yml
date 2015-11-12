@@ -18,10 +18,9 @@ install:
   - sudo apt-get install vim
   - sudo apt-get install r-base
   - sudo apt-get install r-base-dev
+  - sudo apt-get install texlive-full
   
-before_script:
-  - git config --global user.email "arturoinosencio@gmail.com"
-  - git config --global user.name "Wowip"
+
   
 # command to run tests
 script: 
