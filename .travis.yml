@@ -26,6 +26,7 @@ before_script:
 # command to run tests
 script: 
   - sh scrip_prueba.sh
+  - Sweave -ld ejemplo.Rnw
   
   
 after_script:
