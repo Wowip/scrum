@@ -18,7 +18,6 @@ install:
   - sudo apt-get install vim
   - sudo apt-get install r-base
   - sudo apt-get install r-base-dev
-  - sudo apt-get install texlive-full
   - Rscript -e "install.packages('knitr', repos = c('http://yihui.name/xran', 'http://cran.rstudio.org'), type = 'source')"
 
   
