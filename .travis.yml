@@ -26,7 +26,8 @@ before_script:
 # command to run tests
 script: 
   - sh scrip_prueba.sh
-  - sh scriptr.sh
+  - Rscript -e "library(knitr); knit('ejemplo.Rmd')"
+
   
   
 after_script:
