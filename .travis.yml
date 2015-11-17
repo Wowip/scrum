@@ -17,7 +17,10 @@ install:
   - sudo apt-get install nano
   - sudo apt-get install vim
   - sudo wget https://cran.r-project.org/src/base-prerelease/R-latest.tar.gz
-  - cd R-latest
+  - cd R-patched
+  - ./configure
+  - make
+  - cd ..
   - wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
   - sudo R CMD INSTALL knitr_1.11.tar.gz
 
