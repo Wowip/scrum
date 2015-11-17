@@ -16,7 +16,8 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo aptitude install gzip bzip2 unzip unarj zoo tar unrar lha
+  - sudo apt-get install gcc
+  - sudo apt-get install gfortran
   - sudo wget https://cran.r-project.org/src/base-prerelease/R-latest.tar.gz
   - tar -xvzf R-latest.tar.gz
   - cd R-patched
