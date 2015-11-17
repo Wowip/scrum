@@ -17,6 +17,7 @@ install:
   - sudo apt-get install nano
   - sudo apt-get install vim
   - sudo apt-get install r-base
+  - sudo Rscript -e "update.packages(checkBuilt=TRUE)"
 
   - sudo Rscript -e "install.packages('knitr', repos = c('https://cran.mtu.edu/'), type = 'source')"
   
