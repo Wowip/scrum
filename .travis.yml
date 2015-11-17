@@ -16,9 +16,11 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo apt-get install r-base-dev
+  - sudo wget https://cran.r-project.org/src/base-prerelease/R-latest.tar.gz
+  - cd R-latest
   - wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
   - sudo R CMD INSTALL knitr_1.11.tar.gz
+
 
   
 # command to run tests
