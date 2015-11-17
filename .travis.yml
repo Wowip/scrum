@@ -16,7 +16,7 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo apt-get install r-base
+  - sudo apt-get install r-base-dev
 
   - sudo Rscript -e "install.packages('knitr', repos = c('https://cran.mtu.edu/'), type = 'source')"
   
