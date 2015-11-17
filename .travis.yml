@@ -23,7 +23,7 @@ install:
 # command to run tests
 script: 
   - sh scrip_prueba.sh
-  - Rscript -e "R.version()"
+  - Rscript -e "R.version"
   - Rscript -e "library(knitr); knit('ejemplo.Rmd')"
 
   
