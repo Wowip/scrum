@@ -19,7 +19,7 @@ install:
   - sudo wget https://cran.r-project.org/src/base-prerelease/R-latest.tar.gz
   - tar -xvzf R-latest.tar.gz
   - cd R-patched
-  - ./configure
+  - sudo ./configure
   - make
   - cd ..
   - wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
