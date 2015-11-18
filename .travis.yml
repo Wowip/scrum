@@ -17,7 +17,6 @@ install:
   - sudo apt-get install nano
   - sudo apt-get install texmaker
   - sudo apt-get install vim
-  - sudo apt-get install r-base-dev
   - sudo apt-get install gcc
   - sudo apt-get install gfortran
   - sudo wget https://cran.r-project.org/src/base-prerelease/R-latest.tar.gz
