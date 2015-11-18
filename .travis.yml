@@ -25,7 +25,7 @@ install:
   - sudo make
   - cd ..
   - wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
-  - sudo R CMD INSTALL knitr_1.11.tar.gz
+  - R CMD INSTALL knitr_1.11.tar.gz
 
 
   
