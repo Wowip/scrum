@@ -19,14 +19,7 @@ install:
   - sudo apt-get install vim
   - sudo apt-get install gcc
   - sudo apt-get install gfortran
-  - sudo wget https://cran.r-project.org/src/base/R-3/R-3.0.0.tar.gz
-  - sudo tar -xvzf R-3.0.0.tar.gz
-  - ls
-  - cd R-3.0.0
-  - sudo ./configure
-  - sudo make
-  - cd ..
-  - sudo wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
+  - sudo apt-get install r-base-dev
   - sudo R CMD INSTALL knitr_1.11.tar.gz
 
 
