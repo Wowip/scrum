@@ -16,7 +16,7 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+  - sudo sh -c 'echo "deb http://cran.usthb.dz/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
   - sudo apt-get install r-base-dev
   - sudo wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
   - sudo R CMD INSTALL knitr_1.11.tar.gz
