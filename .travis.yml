@@ -16,7 +16,7 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo chmod 600 /home/travis/.gnupg/gpg.conf
+  - sudo chmod 600 ~/home/travis/.gnupg/gpg.conf
   - sudo sh -c 'echo "deb http://cran.usthb.dz/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
   - sudo gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
   - sudo gpg -a --export E084DAB9 | sudo apt-key add -
