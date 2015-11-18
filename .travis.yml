@@ -5,6 +5,7 @@ python:
   
 # command to install dependencies
 install: 
+  - sudo add-apt-repository 'deb https://cran.mtu.edu/bin/linux/ubuntu wily/'
   - sudo apt-get update -qq
   - sudo apt-get install python
   - sudo apt-get install python-pip python-dev build-essential
@@ -16,8 +17,8 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo add-apt-repository 'deb https://cran.mtu.edu/bin/linux/ubuntu wily/'
   - sudo apt-get install r-base-dev
+  - sudo wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
   - sudo R CMD INSTALL knitr_1.11.tar.gz
 
 
