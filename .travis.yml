@@ -21,8 +21,8 @@ install:
   - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
   - sudo add-apt-repository -y ppa:marutter/rdev
   - sudo apt-get --yes update
-  - sudo aptitude install r-base 
-  - sudo aptitude install r-base-dev
+  - sudo aptitude -y install r-base 
+  - sudo aptitude -y install r-base-dev
   - sudo wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
   - sudo R CMD INSTALL knitr_1.11.tar.gz
 
