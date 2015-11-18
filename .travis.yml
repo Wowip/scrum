@@ -16,11 +16,12 @@ install:
   - sudo apt-get install python-matplotlib
   - sudo apt-get install nano
   - sudo apt-get install vim
-  - sudo chmod 600 ~/home/travis/.gnupg/gpg.conf
-  - sudo sh -c 'echo "deb http://cran.usthb.dz/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
-  - sudo gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-  - sudo gpg -a --export E084DAB9 | sudo apt-key add -
-  - sudo apt-get install r-base-dev
+  - sudo sh -c 'echo "deb http://ftp.iitm.ac.in/cran/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  - sudo add-apt-repository ppa:marutter/rdev
+  - sudo apt-get update
+  - sudo apt-get upgrade
+  - sudo apt-get install r-base r-base-dev 
   - sudo wget https://cran.r-project.org/src/contrib/knitr_1.11.tar.gz
   - sudo R CMD INSTALL knitr_1.11.tar.gz
 
