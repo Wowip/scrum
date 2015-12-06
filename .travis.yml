@@ -57,6 +57,8 @@ after_script:
   - ssh-add .ssh/id_rsa
   - ssh -T git@github.com
   - git checkout master
+  - git config --global user.email "arturoinosencio@gmail.com"
+  - git config --global user.name "Wowip"
   - git add .
   - git commit -m "añadiendo pruebas"
   - git push origin master
