@@ -1,7 +1,7 @@
 # A minimal R Markdown example
 
 A quote:
-
+v
 > Markdown is not LaTeX.
 
 To compile me, run this in R:
